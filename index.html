@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!----- pembukaan ----->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-text" id="typingText"></div>
+        <button class="enter-btn" onclick="enterSite()">Masuk</button>
+    </div>
+
+    <!----- judul ----->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">✧ ⋆｡˚Fresh Face˚｡⋆ ✧</div>
+        </div>
+    </nav> 
+
+    <!----- koleksi ----->
+    <div class="page active" id="koleksiPage">
+        <h2 class="page-title">Koleksi Produk</h2>
+        <p class="page-subtitle"> Ayo segera pilih produk favoritmu ↓</p>
+
+        <!-- tombol koleksi -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterProducts('all')">Semua</button>
+            <button class="filter-btn" onclick="filterProducts('GARNIER')">GARNIER</button>
+            <button class="filter-btn" onclick="filterProducts('emina')">emina</button>
+            <button class="filter-btn" onclick="filterProducts('Hada Labo')">Hada Labo</button>
+            <button class="filter-btn" onclick="filterProducts('Fair&Lovely')">Fair&Lovely</button>
+            <button class="filter-btn" onclick="filterProducts('SCŌRA')">SCŌRA</button>
+            <button class="filter-btn" onclick="filterProducts('Gla͜d2Glow')">Gla͜d2Glow</button>
+            <button class="filter-btn" onclick="filterProducts('Wardãh')">Wardãh</button>
+            <button class="filter-btn" onclick="filterProducts('SKINTIFIC')">SKINTIFIC</button>
+            <button class="filter-btn" onclick="filterProducts('Kahf')">Kahf</button>
+        </div> 
+
+        <!-- tempat menampilkan produk -->
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
+    <!----- pilihan varian ----->
+    <div class="modal" id="variantModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('variantModal')">&times;</span>
+            <h3 class="modal-title" id="variantTitle">Pilih Varian</h3>
+            <p class="modal-desc"> Lihat detail</p>
+            <div class="variants-grid" id="variantsGrid"></div>
+        </div>
+    </div>
+
+    <!----- detail produk ----->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('detailModal')">&times;</span>
+            <img class="detail-img" id="detailImg" src="" alt="">
+            <h3 id="detailName">Nama Produk</h3>
+            <p class="variant-name" id="detailVarian"></p>
+            <p class="detail-desc" id="detailDesc"></p>
+        </div>
+    </div>
+
+    <!----- footer ----->
+    <footer id="mainFooter" style="display: none;">
+        <div class="footer-content">
+            <p>⋆｡˚ Fresh Face — Solusi Kulit Sehatmu ˚｡⋆</p>
+            <p>📍 Malang, Jawa Timur | 📧 freshface@email.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
