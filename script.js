@@ -4,9 +4,9 @@ const products = [
         id: 'GARNIER',
         name: 'GARNIER',
         variants: [
-            { name: 'Sakura White', desc: 'Membantu mencerahkan wajah dan membuat kulit tampak lebih segar.', image: 'garnier 1.jpg' },
-            { name: 'Brightening', desc: 'Membantu membersihkan wajah dan membuat kulit tampak lebih cerah.', image: 'Garnier 2.jpg' },
-            { name: 'Pure Active', desc: 'Membantu membersihkan minyak berlebih dan merawat kulit berjerawat.', image: 'Garnier 3.jpg' }
+            { name: 'Sakura White', price: 35.000, desc: 'Membantu mencerahkan wajah dan membuat kulit tampak lebih segar.', image: 'garnier 1.jpg' },
+            { name: 'Brightening', price: 33.000, desc: 'Membantu membersihkan wajah dan membuat kulit tampak lebih cerah.', image: 'Garnier 2.jpg' },
+            { name: 'Pure Active', price: 33.000, desc: 'Membantu membersihkan minyak berlebih dan merawat kulit berjerawat.', image: 'Garnier 3.jpg' }
         ]
     },
 
@@ -14,8 +14,8 @@ const products = [
         id: 'emina',
         name: 'emina',
         variants: [
-            { name: 'Stawberry Cheesecake', desc: 'Membersihkan wajah dengan aroma manis strawberry dan memberikan kesegaran.', image: 'emina 1.jpg' },
-            { name: 'Matcha Latte', desc: 'Membersihkan wajah dan memberikan sensasi segar dengan aroma matcha.', image: 'emina 2.jpg' }
+            { name: 'Stawberry Cheesecake', price: 30.000, desc: 'Membersihkan wajah dengan aroma manis strawberry dan memberikan kesegaran.', image: 'emina 1.jpg' },
+            { name: 'Matcha Latte', price: 30.000, desc: 'Membersihkan wajah dan memberikan sensasi segar dengan aroma matcha.', image: 'emina 2.jpg' }
         ]
     },
 
@@ -23,9 +23,9 @@ const products = [
         id: 'Hada Labo',
         name: 'Hada Labo',
         variants: [
-            { name: 'Ultimate Moisturizing', desc: 'Membersihkan wajah sekaligus membantu menjaga kelembapan kulit.', image: 'hadalabo 1.jpg' },
-            { name: 'Goku Jyun', desc: 'Membantu menjaga hidrasi kulit agar terasa lembap dan halus.', image: 'hadalabo 2.jpg' },
-            { name: 'Shiro Jyun', desc: 'Membantu mencerahkan kulit dan menjaga kelembapannya.', image: 'hadalabo 3.jpg' }
+            { name: 'Ultimate Moisturizing', price: 28.000, desc: 'Membersihkan wajah sekaligus membantu menjaga kelembapan kulit.', image: 'hadalabo 1.jpg' },
+            { name: 'Goku Jyun', price: 31.000, desc: 'Membantu menjaga hidrasi kulit agar terasa lembap dan halus.', image: 'hadalabo 2.jpg' },
+            { name: 'Shiro Jyun', price: 25.000, desc: 'Membantu mencerahkan kulit dan menjaga kelembapannya.', image: 'hadalabo 3.jpg' }
         ]
     },
 
@@ -33,8 +33,8 @@ const products = [
         id: 'Fair&Lovely',
         name: 'Fair&Lovely',
         variants: [
-            { name: 'Brightening', desc: 'Membantu membersihkan wajah dan membuat kulit tampak lebih cerah.', image: 'fair&lovely 1.jpg' },
-            { name: 'Vitamin C', desc: 'Membantu merawat kulit agar tampak lebih cerah dan segar.', image: 'fair&lovely 2.jpg' }
+            { name: 'Brightening', price: 29.000, desc: 'Membantu membersihkan wajah dan membuat kulit tampak lebih cerah.', image: 'fair&lovely 1.jpg' },
+            { name: 'Vitamin C', price: 29.000, desc: 'Membantu merawat kulit agar tampak lebih cerah dan segar.', image: 'fair&lovely 2.jpg' }
         ]
     },
 
@@ -42,9 +42,9 @@ const products = [
         id: 'SCŌRA',
         name: 'SCŌRA',
         variants: [
-            { name: 'D-Panthenol', desc: 'Membantu menjaga kelembapan dan merawat skin barrier.', image: 'scora-1.jpg' },
-            { name: 'Salicylice Acid', desc: 'Membantu membersihkan pori-pori dan merawat kulit berjerawat.', image: 'scora-2.jpg' },
-            { name: 'Phytobright', desc: 'Membantu mencerahkan dan merawat kulit kusam.', image: 'scora-3.jpg' }
+            { name: 'D-Panthenol', price: 34.000, desc: 'Membantu menjaga kelembapan dan merawat skin barrier.', image: 'scora-1.jpg' },
+            { name: 'Salicylice Acid', price: 35.000, desc: 'Membantu membersihkan pori-pori dan merawat kulit berjerawat.', image: 'scora-2.jpg' },
+            { name: 'Phytobright', price: 36.000, desc: 'Membantu mencerahkan dan merawat kulit kusam.', image: 'scora-3.jpg' }
         ]
     },
 
@@ -52,9 +52,9 @@ const products = [
         id: 'Gla͜d2Glow',
         name: 'Gla͜d2Glow',
         variants: [
-            { name: 'Acne Gel', desc: 'Membantu membersihkan minyak berlebih dan merawat kulit berjerawat.', image: 'g2g 1.jpg' },
-            { name: ' Low PH Gentle', desc: 'Membersihkan wajah dengan lembut dan membantu menjaga keseimbangan pH kulit.', image: 'g2g 2.jpg' },
-            { name: 'Milk', desc: 'Membersihkan wajah sekaligus membantu menjaga kelembutan kulit.', image: 'g2g 3.jpg' }
+            { name: 'Acne Gel', price: 28.000, desc: 'Membantu membersihkan minyak berlebih dan merawat kulit berjerawat.', image: 'g2g 1.jpg' },
+            { name: ' Low PH Gentle', price: 28.000, desc: 'Membersihkan wajah dengan lembut dan membantu menjaga keseimbangan pH kulit.', image: 'g2g 2.jpg' },
+            { name: 'Milk', price: 35.000, desc: 'Membersihkan wajah sekaligus membantu menjaga kelembutan kulit.', image: 'g2g 3.jpg' }
         ]
     },
 
@@ -62,9 +62,9 @@ const products = [
         id: 'Wardãh',
         name: 'Wardãh',
         variants: [
-            { name: 'Bright+Oil Control', desc: 'Membantu mencerahkan wajah dan mengontrol minyak berlebih.', image: 'wardah-1.jpg' },
-            { name: 'Hydrating', desc: 'Membersihkan wajah sekaligus menjaga kelembapan kulit.', image: 'wardah 2.jpg' },
-            { name: 'Cooling Bright', desc: 'Membersihkan wajah, memberikan sensasi dingin, dan membantu kulit tampak cerah.', image: 'wardah-3.jpg' }
+            { name: 'Bright+Oil Control', price: 28.000, desc: 'Membantu mencerahkan wajah dan mengontrol minyak berlebih.', image: 'wardah-1.jpg' },
+            { name: 'Hydrating', price: 28.000, desc: 'Membersihkan wajah sekaligus menjaga kelembapan kulit.', image: 'wardah 2.jpg' },
+            { name: 'Cooling Bright', price: 28.000, desc: 'Membersihkan wajah, memberikan sensasi dingin, dan membantu kulit tampak cerah.', image: 'wardah-3.jpg' }
         ]
     },
 
@@ -72,8 +72,8 @@ const products = [
         id: 'SKINTIFIC',
         name: 'SKINTIFIC',
         variants: [
-            { name: '5X Ceramide', desc: 'Membantu menjaga dan memperkuat skin barrier serta kelembapan kulit.', image: 'skintific-1.jpg' },
-            { name: 'Niacinamide', desc: 'Membantu mencerahkan kulit dan merawat tampilan warna kulit tidak merata.', image: 'skintific-2.jpg' }
+            { name: '5X Ceramide', price: 51.000, desc: 'Membantu menjaga dan memperkuat skin barrier serta kelembapan kulit.', image: 'skintific-1.jpg' },
+            { name: 'Niacinamide', price: 51.000, desc: 'Membantu mencerahkan kulit dan merawat tampilan warna kulit tidak merata.', image: 'skintific-2.jpg' }
         ]
     },
 
@@ -81,9 +81,9 @@ const products = [
         id: 'Kahf',
         name: 'Kahf',
         variants: [
-            { name: 'Energizing and Brightening', desc: 'Membersihkan wajah dan membantu membuat kulit tampak lebih segar dan cerah.', image: 'kahf-1.jpg' },
-            { name: 'Brightening and Energizing', desc: 'Membantu membersihkan wajah agar terasa segar dan tampak lebih cerah.', image: 'kahf-2.jpg' },
-            { name: 'Brightening and Dark Spot', desc: 'Membantu merawat kulit kusam dan menyamarkan tampilan noda hitam.', image: 'kahf-3.jpg' }
+            { name: 'Energizing and Brightening', price: 38.000, desc: 'Membersihkan wajah dan membantu membuat kulit tampak lebih segar dan cerah.', image: 'kahf-1.jpg' },
+            { name: 'Brightening and Energizing', price: 38.000, desc: 'Membantu membersihkan wajah agar terasa segar dan tampak lebih cerah.', image: 'kahf-2.jpg' },
+            { name: 'Brightening and Dark Spot', price: 38.000, desc: 'Membantu merawat kulit kusam dan menyamarkan tampilan noda hitam.', image: 'kahf-3.jpg' }
         ]
     }
 ];
@@ -176,7 +176,7 @@ function openDetail(variantIndex) {
     document.getElementById('detailName').textContent = `${currentProduct.name}`;
     document.getElementById('detailVarian').textContent = `— ${selectedVariant.name} —`;
     document.getElementById('detailDesc').textContent = selectedVariant.desc;
-    
+    document.getElementById('detailPrice').textContent = `Rp ${selectedVariant.price.toLocaleString('id-ID')}`;
     document.getElementById('detailModal').classList.add('show');
 }
 

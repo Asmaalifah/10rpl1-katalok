@@ -338,6 +338,12 @@ footer {
     font-weight: bold;
 }
 
+.detail-price {
+    color: var(--ungu-gelap);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 .detail-img {
     display: block;
     width: auto;
